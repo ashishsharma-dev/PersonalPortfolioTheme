@@ -255,7 +255,7 @@ body{
   color: #333;
   /* font-weight: 300; */
   letter-spacing: 1px;
-  margin-bottom: 30px;
+  margin-bottom: 30px !important;
 }
 .aboutSummary{
   font-size: 1.2rem;
@@ -372,13 +372,15 @@ body{
 }
 .educationCard{
   font-family: "Monteserrat", sans-serif;
+}
+.educationCard, .projectCard{
   padding: 20px 15px;
-  box-shadow: 0 1px 1px 0 rgba(0,0,0,0.14), 0 2px 1px -1px rgba(0,0,0,0.12), 0 1px 3px 0 rgba(0,0,0,0.20);
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
   transition: all 0.3s ease-in-out;
 }
 
-.educationCard:hover{
-  box-shadow: 0 12px 17px 2px rgba(0,0,0,0.14), 0 5px 22px 4px rgba(0,0,0,0.12), 0 7px 8px -4px rgba(0,0,0,0.20);
+.educationCard:hover, .projectCard:hover{
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
 
 
@@ -428,10 +430,10 @@ body{
 
 /* CSS Animations */
 .certificateCard{
-  box-shadow: 0 1px 1px 0 rgba(0,0,0,0.14), 0 2px 1px -1px rgba(0,0,0,0.12), 0 1px 3px 0 rgba(0,0,0,0.20);
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 }
 .certificateCard:hover{
-  box-shadow: 0 12px 17px 2px rgba(0,0,0,0.14), 0 5px 22px 4px rgba(0,0,0,0.12), 0 7px 8px -4px rgba(0,0,0,0.20);
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
 .certificateCard .credId, .insName{
   font-size: 1rem;
@@ -470,7 +472,7 @@ body{
   background-color: #6c63ff;
   color: #fff;
 /*   border-radius: 22px;*/
-  box-shadow: 0 1px 1px 0 rgba(0,0,0,0.14), 0 2px 1px -1px rgba(0,0,0,0.12), 0 1px 3px 0 rgba(0,0,0,0.20);
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 }
 .freeCode i{
   font-size: 2.5rem;
@@ -492,7 +494,7 @@ body{
   position: relative;
 }
 .expCol:hover{
-  box-shadow: 0 12px 17px 2px rgba(0,0,0,0.14), 0 5px 22px 4px rgba(0,0,0,0.12), 0 7px 8px -4px rgba(0,0,0,0.20);
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
 .expCol .blurredDiv1, .blurredDiv2, .blurredDiv3{
   width: 100%;
@@ -558,7 +560,107 @@ body{
 .footerSection{
   margin-top: 60px;
 }
-
+.footerContainer h1{
+  font-size: 3rem;
+  margin-bottom: 30px;
+}
+.footerContainer form{
+  display: flex;
+  flex-direction: column;
+}
+.footerContainer input, textarea{
+  margin: 0.5rem 0;
+  padding: 0.5rem 0.8rem;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.3rem;
+  font-weight: 300;
+  color: #333;
+  outline: none;
+  border: none;
+  border: 1px solid #ddd;
+  border-radius: 0.5rem; 
+}
+.footerContainer textarea{
+  height: 10rem;
+}
+.footerContainer .footerCol{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.footerCol .socialIcons{
+  display: flex;
+}
+.footerCol .socialIcons div{
+  margin: 0 0.8rem;
+}
+.footerCol .picture{
+  text-align: center;
+}
+.footerCol .picture img{
+  width: 16rem;
+  animation: none;
+  /* border: 0.4rem solid #333; */
+  margin-bottom: 1rem;
+  height: 16rem;
+  border-radius: 50%;
+}
+.footerSection .footerCredits{
+  margin-top: 30px;
+  text-align: center;
+  background-color: #333;
+  color: #fff;
+  font-family: myFirstFont;
+}
+.footerCredits p{
+  margin: 0;
+  padding: 1rem;
+}
+.mb30px{
+  margin-bottom: 30px !important;
+}
+/* .projectsContainer h1{
+  font-size: 3rem;
+  margin-bottom: 30px;
+  margin-top: 60px;
+} */
+.mb60px{
+  margin-bottom: 60px !important;
+}
+.projectsContainer .projectName{
+  font-size: 1.5rem;
+}
+.projectsContainer .projectDetail{
+  font-size: 1rem;
+  margin-right: 10px;
+}
+.projectsContainer .projectBottom{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.html{
+  color: #F06529;
+}
+.css{
+  color: #0096c7;
+}
+.js{
+  color: #fca311;
+}
+.projectBottom .language{
+  padding: 0.3rem 0.5rem;
+  border: 2px solid rgba(0, 0, 0, 0.06);
+}
+.projectBtns a{
+  display: inline-block;
+  padding: 0.3rem 0.5rem;
+  text-decoration: none;
+  font-weight: 600;
+  background-color: #6c63ff;
+  color: #fff;
+}
 
 
 
@@ -618,6 +720,7 @@ body{
     margin: 10px;
   }
   .skills-heading{
+    font-size: 3rem !important;
     text-align: center;
   }
   .proficiencyContainer .progress{
@@ -654,6 +757,9 @@ body{
   }
   .expCol .comImg{
     width: 30vw;
+  }
+  .footerContainer .footerCol{
+    margin-top: 1rem;
   }
 }
 /* Small devices (portrait tablets and large phones, 600px and up) */
