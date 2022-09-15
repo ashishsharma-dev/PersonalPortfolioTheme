@@ -2,6 +2,12 @@ const customPreloader = document.querySelector('.customPreloader');
 document.body.style.overflow = 'hidden';
 
 
+window.onbeforeunload = () => {
+  for (const form of document.getElementsByTagName('form')) {
+    form.reset();
+  }
+}
+
 window.onscroll = function(e) {
   var scrollY = window.pageYOffset || document.documentElement.scrollTop;
   var customNav = document.querySelector('.customNav');

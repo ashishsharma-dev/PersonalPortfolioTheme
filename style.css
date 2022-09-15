@@ -648,7 +648,15 @@ body{
   color: #fff;
 }
 
-
+.formSubmitBtn{
+  transition: all 0.3s ease-in-out;
+  background-color: #7AEB8D;
+  color: #fff;
+}
+.formSubmitBtn:hover{
+  background-color: #036E15;
+  color: #fff;
+}
 
 /* Media Queries */
 
