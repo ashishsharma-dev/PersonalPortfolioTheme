@@ -5,6 +5,12 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width" />
   <title>Personal Portfolio</title>
+<!--   Favicon -->
+  <link rel="apple-touch-icon" sizes="180x180" href="imgs/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="imgs/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="imgs/favicon-16x16.png">
+<link rel="manifest" href="imgs/site.webmanifest">
+<!--   Augustina Font -->
   <link rel="preload" href="/assets/Agustina.woff" as="font" type="font/woff" crossorigin>
   <!-- CSS only -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" />
@@ -12,25 +18,23 @@
   <link rel="stylesheet" href="bootstrap.min.css" />
   <!-- Fontawesome CDN -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
 
   <!-- Custom CSS -->
   <link href="style.css" rel="stylesheet" type="text/css" />
 </head>
 
 <body>
-  <div class="customPreloader">
-    <!--     <div class="snippet" data-title=".dot-flashing">
-      <div class="stage">
-        <div class="dot-flashing"></div>
-      </div>
-    </div> -->
+<!--   Preloader -->
+  <!--   <div class="customPreloader">
+    
     <h1>
       <span class="logoBrackets"> &lt; </span> Ashish Sharma
       <span class="logoBrackets">/&gt;</span>
     </h1>
     <img src="imgs/preloader.gif" alt="preloader_gif">
-  </div>
-  <section class="navSection">
+  </div> -->
+  <section class="navSection animate__animated animate__fadeIn">
     <!-- Nav Bar -->
     <nav class="customNav navbar navbar-expand-lg bg-light">
       <div class="container-fluid">
@@ -68,7 +72,7 @@
   <section id="heroSection" class="heroSection mb60px">
     <div class="heroContainer">
       <div class="row">
-        <div class="col colLeft">
+        <div class="col colLeft animate__animated animate__fadeIn">
           <div class="content">
             <h1 class="topHeader">
               Hi all, I'm Ashish
@@ -105,11 +109,11 @@
             <div class="ctaBtns">
               <a href="tel:+918439762192">Contact Me</a>
               <a target="_blank"
-                href="https://drive.google.com/file/d/1WWdsoDidh29cnFYe-hywuuwbQYjOVu-o/view?usp=sharing">See Resume</a>
+                href="https://drive.google.com/file/d/1izbL0yjJw8GjIrc5yAAFJz0ZclSmuL32/view?usp=sharing">See Resume</a>
             </div>
           </div>
         </div>
-        <div class="col colRight">
+        <div class="col colRight animate__animated animate__fadeIn">
           <img src="imgs/hello.svg" alt="helloimg" />
         </div>
       </div>
@@ -192,8 +196,7 @@
             </p>
 
             <p class="aboutSummary aboutHeadings">
-              ⚡ Integration of third party services such as Firebase/ AWS /
-              Digital Ocean
+              ⚡ Integration of third party services such as Firebase
             </p>
 
             <a href="#" class="knowMore">
@@ -441,6 +444,31 @@
             </div>
           </div>
         </div>
+
+
+        <div class="col-lg-6 col-md-6 col-sm-12 mb-4">
+          <div class="projectCard div">
+            <h2 class="projectName">Worktodo V2</h2>
+            <p class="projectDetail">
+              Mobile Responsive Todo Application with localStorage to save data in the local storage of device. Made
+              with HTML, CSS, & Javascript.
+            </p>
+            <div class="projectBottom">
+              <div class="language">
+                <span class="projectDetail html">HTML <i class="fa-brands fa-html5"></i></span>
+                <span class="projectDetail css">CSS <i class="fa-brands fa-css3"></i></span>
+                <span class="projectDetail js">JS <i class="fa-brands fa-js"></i></span>
+              </div>
+              <div class="projectBtns">
+                <span><a target="_blank" href="https://worktodov2.netlify.app/" class="projectLiveLink">View
+                    Live</a></span>
+                <span><a target="_blank" href="https://github.com/ashishsharma-dev/Worktodo-v2"
+                    class="projectSourceCode">View Source
+                    Code</a></span>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </section>
@@ -567,7 +595,7 @@
               <p style="color: #868e96; font-size: 1rem;" class="lead"><strong>Hello there!</strong> It's a pleasure for
                 me you visited here, I have learned a lot in the past year and gained knowledge with front end as well
                 as backend technologies in Javascript and now my focus is to crack a job as a <strong>Web
-                  Developer</strong>. Feel free to drop me a message if have any opportunity for me.</p>
+                  Developer</strong>. Feel free to drop me a message if you have any opportunity for me.</p>
               <p class="lead">Open for opportunities: Yes!</p>
             </div>
           </div>

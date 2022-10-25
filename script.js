@@ -1,5 +1,5 @@
-const customPreloader = document.querySelector('.customPreloader');
-document.body.style.overflow = 'hidden';
+// const customPreloader = document.querySelector('.customPreloader');
+// document.body.style.overflow = 'hidden';
 
 
 window.onbeforeunload = () => {
@@ -20,10 +20,10 @@ window.onscroll = function(e) {
 }
 
 
-setTimeout(() => {
-  document.body.style.overflowY = 'scroll';
-  customPreloader.style.display = 'none';
-}, 4000);
+// setTimeout(() => {
+//   document.body.style.overflowY = 'scroll';
+//   customPreloader.style.display = 'none';
+// }, 4000);
 
 // window.onload(
 //   document.body.style.overflowY = 'scroll',
