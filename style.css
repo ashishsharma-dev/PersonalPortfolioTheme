@@ -456,11 +456,11 @@ body{
 .expCol:hover{
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
-.expCol .blurredDiv1, .blurredDiv2, .blurredDiv3{
+.expCol .blurredDiv1, .blurredDiv2, .blurredDiv3, .blurredDiv4{
   width: 100%;
   height: 200px;
 }
-.blurredDiv1,.blurredDiv2,.blurredDiv3 .comName{
+.blurredDiv1,.blurredDiv2,.blurredDiv3, .blurredDiv4 .comName{
   font-size: 1.4rem;
   font-weight: 600;
   color: #fff;
@@ -471,14 +471,17 @@ body{
   box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 }
 .blurredDiv2{
-  background-color: rgb(36, 54, 130);
+  background: linear-gradient(90deg, hsla(229, 57%, 33%, 1) 0%, hsla(0, 0%, 16%, 1) 67%, hsla(227, 18%, 10%, 1) 100%);
   box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 
 }
 .blurredDiv3{
-  background-color: #ec3237;
+  background: linear-gradient(90deg, hsla(358, 83%, 56%, 1) 0%, hsla(0, 100%, 38%, 1) 55%, hsla(358, 70%, 19%, 1) 100%);
   box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
-
+}
+.blurredDiv4{
+  background: linear-gradient(90deg, hsl(295deg 1% 45%) 0%, hsl(295deg 2% 52%) 48%, hsl(0deg 0% 6%) 100%);
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 }
 .expCol .roleName h2{
   font-size: 1.5rem;
