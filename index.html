@@ -1,60 +1,35 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width" />
-    <title>Personal Portfolio</title>
-    <!--   Favicon -->
-    <link
-      rel="apple-touch-icon"
-      sizes="180x180"
-      href="imgs/apple-touch-icon.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="32x32"
-      href="imgs/favicon-32x32.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="16x16"
-      href="imgs/favicon-16x16.png"
-    />
-    <link rel="manifest" href="imgs/site.webmanifest" />
-    <!--   Augustina Font -->
-    <link
-      rel="preload"
-      href="/assets/Agustina.woff"
-      as="font"
-      type="font/woff"
-      crossorigin
-    />
-    <!-- CSS only -->
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-    />
-    <!-- Static Bootstrap CSS -->
-    <link rel="stylesheet" href="bootstrap.min.css" />
-    <!-- Fontawesome CDN -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
-    />
 
-    <!-- Custom CSS -->
-    <link href="style.css" rel="stylesheet" type="text/css" />
-  </head>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width" />
+  <title>Personal Portfolio</title>
+  <!--   Favicon -->
+  <link rel="apple-touch-icon" sizes="180x180" href="imgs/apple-touch-icon.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="imgs/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="imgs/favicon-16x16.png" />
+  <link rel="manifest" href="imgs/site.webmanifest" />
+  <!--   Augustina Font -->
+  <link rel="preload" href="/assets/Agustina.woff" as="font" type="font/woff" crossorigin />
+  <!-- CSS only -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <!-- Static Bootstrap CSS -->
+  <link rel="stylesheet" href="bootstrap.min.css" />
+  <!-- Fontawesome CDN -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
 
-  <body>
-    <!--   Preloader -->
-    <!--   <div class="customPreloader">
+  <!-- AOS -->
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+  <!-- Custom CSS -->
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+  <!--   Preloader -->
+  <!--   <div class="customPreloader">
     
     <h1>
       <span class="logoBrackets"> &lt; </span> Ashish Sharma
@@ -62,831 +37,56 @@
     </h1>
     <img src="imgs/preloader.gif" alt="preloader_gif">
   </div> -->
-    <section class="navSection animate__animated animate__fadeIn">
-      <!-- Nav Bar -->
-      <nav class="customNav navbar navbar-expand-lg bg-light">
-        <div class="container-fluid">
-          <a class="navbar-brand customBrand" href="#"
-            ><span class="logoBrackets"> &lt; </span> Ashish Sharma
-            <span class="logoBrackets">/&gt;</span></a
-          >
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarNav"
-            aria-controls="navbarNav"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav m-auto">
-              <li class="nav-item">
-                <a class="nav-link" aria-current="page" href="#heroSection"
-                  >Home</a
-                >
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#aboutSection">About</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#proficiencySection">Proficiency</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#educationSection">Education</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#projectsSection">Projects</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#certificatesSection">Certificates</a>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </nav>
-    </section>
-    <section id="heroSection" class="heroSection mb60px">
-      <div class="heroContainer">
-        <div class="row">
-          <div class="col colLeft animate__animated animate__fadeIn">
-            <div class="content">
-              <h1 class="topHeader">
-                Hi all, I'm Ashish
-                <div class="wave">👋</div>
-              </h1>
-              <p>
-                A passionate Full Stack Website Developer 🚀 having an
-                experience of building beautiful Websites and Web Apps with
-                JavaScript / React JS / Node JS and databases.
-              </p>
-
-              <div class="socialIcons">
-                <div class="github">
-                  <a target="_blank" href="https://github.com/ashishsharma-dev">
-                    <i class="fa-brands fa-github"></i>
-                  </a>
-                </div>
-                <div target="_blank" class="linkedin">
-                  <a href="https://www.linkedin.com/in/ashishsharma-dev">
-                    <i class="fa-brands fa-linkedin-in"></i>
-                  </a>
-                </div>
-                <div class="gmail">
-                  <a href="mailto:sharmaashish049@gmail.com">
-                    <i class="fa-solid fa-envelope"></i>
-                  </a>
-                </div>
-                <div target="_blank" class="facebook">
-                  <a
-                    href="https://www.facebook.com/profile.php?id=100002441707505"
-                  >
-                    <i class="fa-brands fa-facebook"></i>
-                  </a>
-                </div>
-              </div>
-              <div class="ctaBtns">
-                <a href="tel:+918439762192">Contact Me</a>
-                <a
-                  target="_blank"
-                  href="https://drive.google.com/file/d/1p_Ga9eaT8P5Oq2Xcon_8kpq_7rUqOpvT/view?usp=share_link"
-                  >See Resume</a
-                >
-              </div>
-            </div>
-          </div>
-          <div class="col colRight animate__animated animate__fadeIn">
-            <img src="imgs/hello.svg" alt="helloimg" />
-          </div>
+  <section class="navSection animate__animated animate__fadeIn">
+    <!-- Nav Bar -->
+    <nav class="customNav navbar navbar-expand-lg bg-light">
+      <div class="container-fluid">
+        <a class="navbar-brand customBrand" href="#"><span class="logoBrackets"> &lt; </span> Ashish Sharma
+          <span class="logoBrackets">/&gt;</span></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav m-auto">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="#heroSection">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#aboutSection">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#proficiencySection">Proficiency</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#educationSection">Education</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#projectsSection">Projects</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#certificatesSection">Certificates</a>
+            </li>
+          </ul>
         </div>
       </div>
-    </section>
-    <section id="aboutSection" class="aboutSection mb60px">
-      <div class="container aboutContainer">
-        <div class="row aboutRow">
-          <div class="col colLeft">
-            <img src="imgs/techstack.svg" alt="techstackimg" />
-          </div>
-          <div class="col">
-            <h1 class="skills-heading slimFont">What I do</h1>
-            <p class="aboutSummary">
-              A Computer Geek with a hunger to learn every tech stack and
-              implement them in real world to solve problems
+    </nav>
+  </section>
+  <section id="heroSection" class="heroSection mb60px">
+    <div class="heroContainer">
+      <div class="row">
+        <div class="col colLeft animate__animated animate__fadeIn">
+          <div class="content">
+            <h1 class="topHeader">
+              Hi all, I'm Ashish
+              <div class="wave">👋</div>
+            </h1>
+            <p>
+              A passionate Full Stack Website Developer 🚀 having an
+              experience of building beautiful Websites and Web Apps with
+              JavaScript / React JS / Node JS and databases.
             </p>
-            <div class="aboutContent">
-              <ul class="dev-icons">
-                <li class="software-skill-inline" name="html-5">
-                  <i class="fab fa-html5"></i>
-                  <p>html-5</p>
-                </li>
-                <li class="software-skill-inline" name="css3">
-                  <i class="fab fa-css3-alt"></i>
-                  <p>css3</p>
-                </li>
-                <li class="software-skill-inline" name="sass">
-                  <i class="fab fa-sass"></i>
-                  <p>sass</p>
-                </li>
-                <li class="software-skill-inline" name="JavaScript">
-                  <i class="fab fa-js"></i>
-                  <p>JavaScript</p>
-                </li>
-                <li class="software-skill-inline" name="reactjs">
-                  <i class="fab fa-react"></i>
-                  <p>reactjs</p>
-                </li>
-                <li class="software-skill-inline" name="nodejs">
-                  <i class="fab fa-node"></i>
-                  <p>nodejs</p>
-                </li>
-                <li class="software-skill-inline" name="swift">
-                  <i class="fab fa-bootstrap"></i>
-                  <p>bootstrap</p>
-                </li>
-                <li class="software-skill-inline" name="npm">
-                  <i class="fab fa-npm"></i>
-                  <p>npm</p>
-                </li>
-                <li class="software-skill-inline" name="mongodb">
-                  <i class="fas fa-database"></i>
-                  <p>mongodb</p>
-                </li>
-                <!-- <li class="software-skill-inline" name="aws">
-                  <i class="fab fa-aws"></i>
-                  <p>aws</p>
-                </li> -->
-                <li class="software-skill-inline" name="firebase">
-                  <i class="fas fa-fire"></i>
-                  <p>firebase</p>
-                </li>
-                <li class="software-skill-inline" name="python">
-                  <i class="fab fa-java"></i>
-                  <p>java</p>
-                </li>
-                <!-- <li class="software-skill-inline" name="docker">
-                  <i class="fab fa-docker"></i>
-                  <p>docker</p>
-                </li> -->
-              </ul>
-              <p class="aboutHeadings">
-                ⚡ Develop highly interactive Front end / User Interfaces for
-                your websites and web applications
-              </p>
 
-              <p class="aboutSummary aboutHeadings">
-                ⚡ Progressive Web Applications ( PWA ) in normal and SPA Stacks
-              </p>
-
-              <p class="aboutSummary aboutHeadings">
-                ⚡ Integration of third party services such as Firebase
-              </p>
-
-              <a href="#" class="knowMore"> </a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section id="proficiencySection" class="proficiencySection mb60px">
-      <div class="container proficiencyContainer">
-        <div class="row">
-          <div class="col">
-            <h1 class="skills-heading slimFont">Proficiency</h1>
-            <p class="skillsPara">Front End/Design</p>
-            <div class="progress mb-5">
-              <div
-                class="progress-bar"
-                role="progressbar"
-                style="width: 85%"
-                aria-valuenow="0"
-                aria-valuemin="0"
-                aria-valuemax="100"
-              ></div>
-            </div>
-            <p class="skillsPara">Backend</p>
-            <div class="progress mb-5">
-              <div
-                class="progress-bar"
-                role="progressbar"
-                style="width: 70%"
-                aria-valuenow="25"
-                aria-valuemin="0"
-                aria-valuemax="100"
-              ></div>
-            </div>
-            <p class="skillsPara">Database</p>
-            <div class="progress mb-5">
-              <div
-                class="progress-bar"
-                role="progressbar"
-                style="width: 60%"
-                aria-valuenow="50"
-                aria-valuemin="0"
-                aria-valuemax="100"
-              ></div>
-            </div>
-            <p class="skillsPara">Programming</p>
-            <div class="progress mb-5">
-              <div
-                class="progress-bar"
-                role="progressbar"
-                style="width: 60%"
-                aria-valuenow="75"
-                aria-valuemin="0"
-                aria-valuemax="100"
-              ></div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section id="educationSection" class="educationSection mb60px">
-      <div class="container educationContainer">
-        <div class="row">
-          <div class="col">
-            <h1 class="skills-heading slimFont">Education</h1>
-            <div class="educationCard">
-              <div class="schoolLogo">
-                <img src="imgs/dbrau.png" alt="schoolLogo" />
-              </div>
-              <h3>DBRA University</h3>
-              <h5>Bachelor of Science (B.Sc)</h5>
-              <span class="schoolDuration">2013 - 2016</span>
-              <p>Main Subjects are: Physics, Chemistry, Maths</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section id="certificatesSection" class="certificatesSection mb60px">
-      <div class="container certificateContainer">
-        <h1 class="skills-heading slimFont">Certificates</h1>
-        <div class="row certRow">
-          <div class="col-lg-6 col-md-6 col-sm-12 mb-4">
-            <div class="certificateCard">
-              <div class="freeCode">
-                <i class="fa-solid fa-code"></i>
-              </div>
-              <div class="certificateContent">
-                <h2 class="certName">Back End Web Development</h2>
-                <p class="insName bold">Coding Ninjas</p>
-                <a
-                  target="_blank"
-                  href="https://drive.google.com/file/d/1Y0k9K__fE0X-DAvtKpuMHhKAw-SsHDaO/view?usp=sharing"
-                  class="showCert"
-                  >Show Credintials
-                  <i class="fa-solid fa-arrow-up-right-from-square"></i
-                ></a>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-6 col-md-6 col-sm-12 mb-4">
-            <div class="certificateCard">
-              <div class="freeCode">
-                <i class="fa-solid fa-code"></i>
-              </div>
-              <div class="certificateContent">
-                <h2 class="certName">Front End Web Development</h2>
-                <p class="insName bold">Coding Ninjas</p>
-
-                <a
-                  target="_blank"
-                  href="https://drive.google.com/file/d/1uqpehqda-DucDGHXVmy-zB3o6bMWblXU/view?usp=sharing"
-                  class="showCert"
-                  >Show Credintials
-                  <i class="fa-solid fa-arrow-up-right-from-square"></i
-                ></a>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-6 col-md-6 col-sm-12 mb-4">
-            <div class="certificateCard">
-              <div class="freeCode">
-                <i class="fa-solid fa-code"></i>
-              </div>
-
-              <div class="certificateContent">
-                <h2 class="certName">Data Structure in Java</h2>
-                <p class="insName bold">Coding Ninjas</p>
-
-                <a
-                  target="_blank"
-                  href="https://drive.google.com/file/d/1O5tKnWTqZ9JI7ezuqO6V3lHHN_L1ddUG/view?usp=sharing"
-                  class="showCert"
-                  >Show Credintials
-                  <i class="fa-solid fa-arrow-up-right-from-square"></i
-                ></a>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-6 col-md-6 col-sm-12 mb-4">
-            <div class="certificateCard">
-              <div class="freeCode">
-                <i class="fa-solid fa-code"></i>
-              </div>
-
-              <div class="certificateContent">
-                <h2 class="certName">Introduction to Java</h2>
-                <p class="insName bold">Coding Ninjas</p>
-
-                <a
-                  target="_blank"
-                  href="https://drive.google.com/file/d/18A_5Oa15_XybwI5wiaoMgN3DZGwYxc4p/view?usp=sharing"
-                  class="showCert"
-                  >Show Credintials
-                  <i class="fa-solid fa-arrow-up-right-from-square"></i
-                ></a>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-6 col-md-6 col-sm-12 mb-4">
-            <div class="certificateCard">
-              <div class="freeCode">
-                <i class="fa-solid fa-code"></i>
-              </div>
-              <div class="certificateContent">
-                <h2 class="certName">Responsive Web Design</h2>
-                <p class="insName bold">Free Code Camp</p>
-
-                <a
-                  target="_blank"
-                  href="https://www.freecodecamp.org/certification/ashish_dev/responsive-web-design"
-                  class="showCert"
-                  >Show Credintials
-                  <i class="fa-solid fa-arrow-up-right-from-square"></i
-                ></a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section id="projectsSection" class="projectsSection mb60px">
-      <div class="container projectsContainer">
-        <h1 class="skills-heading slimFont">Projects</h1>
-        <div class="row">
-          <div class="col-lg-6 col-md-6 col-sm-12 mb-4">
-            <!-- First Project -->
-
-            <div class="projectCard div">
-              <h2 class="projectName">House Marketplace App</h2>
-              <p class="projectDetail">
-                Mobile First Layout made with Custom CSS, React JS, Firebase, I
-                have used Firebase Auth, Google Auth, Storage, and Databases in
-                this app.
-              </p>
-              <div class="projectBottom">
-                <div class="language">
-                  <span class="projectDetail html"
-                    >HTML <i class="html fa-brands fa-html5"></i
-                  ></span>
-                  <span class="projectDetail css"
-                    >CSS <i class="css fa-brands fa-css3"></i
-                  ></span>
-                  <span class="projectDetail js"
-                    >JS <i class="js fa-brands fa-js"></i
-                  ></span>
-                  <span class="projectDetail js"
-                    >Firebase <i class="js fa-brands fa-gripfire"></i
-                  ></span>
-                </div>
-                <div class="projectBtns">
-                  <span
-                    ><a
-                      target="_blank"
-                      href="https://house-marketplace-ashishsharma-dev.vercel.app/"
-                      class="projectLiveLink"
-                      >Live</a
-                    ></span
-                  >
-                  <span
-                    ><a
-                      target="_blank"
-                      href="https://github.com/ashishsharma-dev/HouseMarketplace"
-                      class="projectSourceCode"
-                      >Code</a
-                    ></span
-                  >
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-6 col-md-6 col-sm-12 mb-4">
-            <!-- First Project -->
-
-            <div class="projectCard div">
-              <h2 class="projectName">Tindog Responsive Website</h2>
-              <p class="projectDetail">
-                Mobile Responsive Website Made using HTML5, CSS3, and Bootstrap
-              </p>
-              <div class="projectBottom">
-                <div class="language">
-                  <span class="projectDetail html"
-                    >HTML <i class="html fa-brands fa-html5"></i
-                  ></span>
-                  <span class="projectDetail css"
-                    >CSS <i class="css fa-brands fa-css3"></i
-                  ></span>
-                </div>
-                <div class="projectBtns">
-                  <span
-                    ><a
-                      target="_blank"
-                      href="https://tindogbyashish.netlify.app/"
-                      class="projectLiveLink"
-                      >Live</a
-                    ></span
-                  >
-                  <span
-                    ><a
-                      target="_blank"
-                      href="https://github.com/ashishsharma-dev/tindog"
-                      class="projectSourceCode"
-                      >Code</a
-                    ></span
-                  >
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-6 col-md-6 col-sm-12 mb-4">
-            <!-- Second Project -->
-
-            <div class="projectCard div">
-              <h2 class="projectName">Express Weather App</h2>
-              <p class="projectDetail">
-                Realtime Weather Application Made with HTML5, CSS3, Javascript,
-                NodeJS, and ExpressJS
-              </p>
-              <div class="projectBottom">
-                <div class="language">
-                  <span class="projectDetail html"
-                    >HTML <i class="fa-brands fa-html5"></i
-                  ></span>
-                  <span class="projectDetail css"
-                    >CSS <i class="fa-brands fa-css3"></i
-                  ></span>
-                  <span class="projectDetail js"
-                    >JS <i class="fa-brands fa-js"></i
-                  ></span>
-                </div>
-                <div class="projectBtns">
-                  <span
-                    ><a
-                      target="_blank"
-                      href="https://expressweatherapp-ashish.herokuapp.com/"
-                      class="projectLiveLink"
-                      >Live</a
-                    ></span
-                  >
-                  <span
-                    ><a
-                      target="_blank"
-                      href="https://github.com/ashishsharma-dev/NodeJsWeatherApp"
-                      class="projectSourceCode"
-                      >Code</a
-                    ></span
-                  >
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-6 col-md-6 col-sm-12 mb-4">
-            <!-- Third Project -->
-
-            <div class="projectCard div">
-              <h2 class="projectName">Personal Portfolio Website</h2>
-              <p class="projectDetail">
-                Personal Portfolio Webpage Made with HTML5, CSS3, Bootstrap, and
-                Javascript
-              </p>
-              <div class="projectBottom">
-                <div class="language">
-                  <span class="projectDetail html"
-                    >HTML <i class="fa-brands fa-html5"></i
-                  ></span>
-                  <span class="projectDetail css"
-                    >CSS <i class="fa-brands fa-css3"></i
-                  ></span>
-                  <span class="projectDetail js"
-                    >JS <i class="fa-brands fa-js"></i
-                  ></span>
-                </div>
-                <div class="projectBtns">
-                  <span><a href="#" class="projectLiveLink">Live</a></span>
-                  <span
-                    ><a
-                      target="_blank"
-                      href="https://github.com/ashishsharma-dev/PersonalPortfolioTheme"
-                      class="projectSourceCode"
-                      >Code</a
-                    ></span
-                  >
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-6 col-md-6 col-sm-12 mb-4">
-            <div class="projectCard div">
-              <h2 class="projectName">Ninja Music Player UI</h2>
-              <p class="projectDetail">
-                Mobile Responsive Music Player User Interface Made with pure
-                HTML, and CSS.
-              </p>
-              <div class="projectBottom">
-                <div class="language">
-                  <span class="projectDetail html"
-                    >HTML <i class="fa-brands fa-html5"></i
-                  ></span>
-                  <span class="projectDetail css"
-                    >CSS <i class="fa-brands fa-css3"></i
-                  ></span>
-                </div>
-                <div class="projectBtns">
-                  <span
-                    ><a
-                      target="_blank"
-                      href="https://ninjaplayerui.netlify.app/"
-                      class="projectLiveLink"
-                      >Live</a
-                    ></span
-                  >
-                  <span
-                    ><a
-                      target="_blank"
-                      href="https://github.com/ashishsharma-dev/MusicPlayerUI"
-                      class="projectSourceCode"
-                      >Code</a
-                    ></span
-                  >
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-6 col-md-6 col-sm-12 mb-4">
-            <div class="projectCard div">
-              <h2 class="projectName">Worktodo V2</h2>
-              <p class="projectDetail">
-                Mobile Responsive Todo Application with localStorage to save
-                data in the local storage of device. Made with HTML, CSS, &
-                Javascript.
-              </p>
-              <div class="projectBottom">
-                <div class="language">
-                  <span class="projectDetail html"
-                    >HTML <i class="fa-brands fa-html5"></i
-                  ></span>
-                  <span class="projectDetail css"
-                    >CSS <i class="fa-brands fa-css3"></i
-                  ></span>
-                  <span class="projectDetail js"
-                    >JS <i class="fa-brands fa-js"></i
-                  ></span>
-                </div>
-                <div class="projectBtns">
-                  <span
-                    ><a
-                      target="_blank"
-                      href="https://worktodov2.netlify.app/"
-                      class="projectLiveLink"
-                      >Live</a
-                    ></span
-                  >
-                  <span
-                    ><a
-                      target="_blank"
-                      href="https://github.com/ashishsharma-dev/Worktodo-v2"
-                      class="projectSourceCode"
-                      >Code</a
-                    ></span
-                  >
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-6 col-md-6 col-sm-12 mb-4">
-            <div class="projectCard div">
-              <h2 class="projectName">Github Finder App</h2>
-              <p class="projectDetail">
-                Mobile Responsive Github Finder Application made with React JS,
-                and Tailwind CSS.
-              </p>
-              <div class="projectBottom">
-                <div class="language">
-                  <span class="projectDetail html"
-                    >JS <i class="fa-brands fa-js"></i
-                  ></span>
-                  <span class="projectDetail css"
-                    >React <i class="fa-brands fa-react"></i
-                  ></span>
-                  <span class="projectDetail js"
-                    >Tailwind CSS <i class="fa-solid fa-spray-can"></i
-                  ></span>
-                </div>
-                <div class="projectBtns">
-                  <span
-                    ><a
-                      target="_blank"
-                      href="https://github-finder-ashishsharma-dev.vercel.app/"
-                      class="projectLiveLink"
-                      >Live</a
-                    ></span
-                  >
-                  <span
-                    ><a
-                      target="_blank"
-                      href="https://github.com/ashishsharma-dev/GitHub-Finder"
-                      class="projectSourceCode"
-                      >Code</a
-                    ></span
-                  >
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section id="experiencesSection" class="experiencesSection mb60px">
-      <div class="container experiencesContainer">
-        <h1 class="skills-heading slimFont">Experiences</h1>
-        <div class="row">
-          <div class="col-sm-12 col-md-6 col-lg-4 mb-3">
-            <div class="expCol">
-              <div class="blurredDiv1">
-                <p class="comName">Teleperformance India</p>
-              </div>
-
-              <div class="comImg">
-                <img src="imgs/tp.png" alt="" />
-              </div>
-
-              <div class="roleName">
-                <h2>Customer Service Associate</h2>
-                <p>Nov 2016 - Jan 2019 · 2 yrs 3 mos</p>
-                <p class="comDesc">
-                  I worked in Teleperformance as a Customer Service Associate.
-                  This was my first job and taught me a lot.
-                </p>
-              </div>
-
-              <div class="expList">
-                <ul>
-                  <li>Customer Service, Handling Calls</li>
-                  <li>On Call Resolution, Customer Query Solving</li>
-                </ul>
-              </div>
-            </div>
-          </div>
-          <div class="col-sm-12 col-md-6 col-lg-4 mb-3">
-            <div class="expCol">
-              <div class="blurredDiv2">
-                <p class="comName">Rife Infotech</p>
-              </div>
-
-              <div class="comImg">
-                <img src="imgs/rife.png" alt="" />
-              </div>
-
-              <div class="roleName">
-                <h2>Content Writer</h2>
-                <p>Jun 2020 - Dec 2021 · 1 yr 7 mos</p>
-                <p class="comDesc">
-                  I worked in Rife Infotech as a Content Writer where I used to
-                  write content about the latest job openings in Government, and
-                  Private Sectors. Also, this job is responsible for increasing
-                  my interest in Web Technologies and the possibilities we can
-                  achieve with code.
-                </p>
-              </div>
-
-              <div class="expList">
-                <ul>
-                  <li>Content Writing, WordPress, CMS</li>
-                  <li>Data Handling, Updating Articles Hourly Basis</li>
-                </ul>
-              </div>
-            </div>
-          </div>
-          <div class="col-sm-12 col-md-6 col-lg-4 mb-3">
-            <div class="expCol">
-              <div class="blurredDiv3">
-                <p class="comName">Cybermount Solutions</p>
-              </div>
-
-              <div class="comImg">
-                <img src="imgs/cybermount.webp" alt="" />
-              </div>
-
-              <div class="roleName">
-                <h2>Web Content Writer</h2>
-                <p>Dec 2021 - Present · 8 mos</p>
-                <p class="comDesc">
-                  This is my current job as a Web Content Writer where I write
-                  technical and non technical content related to Web, SEO,
-                  Fashion and Entertainment.
-                </p>
-              </div>
-
-              <div class="expList">
-                <ul>
-                  <li>WordPress, CMS, Web Content Writing</li>
-                  <li>SEO, eCommerce, etc.</li>
-                </ul>
-              </div>
-            </div>
-          </div>
-          <div class="col-sm-12 col-md-6 col-lg-4 mb-3">
-            <div class="expCol">
-              <div class="blurredDiv4">
-                <p class="comName">OMK Solutions</p>
-              </div>
-
-              <div class="comImg">
-                <img src="imgs/omk-logo.jpg" alt="omk-logo" />
-              </div>
-
-              <div class="roleName">
-                <h2>Website Developer</h2>
-                <p>Dec 2022 - Present · 3 mos</p>
-                <p class="comDesc">
-                  I am currently working here in OMK Solutions as a Website Developer. My main tasks here to do custom tweeks in Shopify Designs, Wordpress Designs and Static Websites.
-                </p>
-              </div>
-
-              <div class="expList">
-                <ul>
-                  <li>Currently working on HTML, CSS, JS, Wordpress, and Shopify</li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section id="footerSection" class="footerSection">
-      <div class="container footerContainer">
-        <h1 class="skills-heading slimFont">Reach Out to me!</h1>
-        <div class="row">
-          <div class="col">
-            <form action="https://formspree.io/f/mrgdpqpl" method="POST">
-              <input
-                required
-                placeholder="Enter Name"
-                type="text"
-                name="name"
-                id="name"
-              />
-              <input
-                required
-                placeholder="Email ID"
-                type="email"
-                name="email"
-                id="email"
-              />
-              <input
-                required
-                placeholder="Mobile No."
-                type="number"
-                name="number"
-                id="number"
-              />
-              <textarea
-                required
-                placeholder="Write Here"
-                name="query"
-                id="query"
-              >
-              </textarea>
-              <input class="formSubmitBtn" value="Send Message" type="submit" />
-            </form>
-          </div>
-          <div class="col footerCol">
-            <div class="myPic">
-              <div class="picture">
-                <img src="imgs/myPic.jpg" alt="authorPic" />
-                <p style="color: #868e96; font-size: 1rem" class="lead">
-                  <strong>Hello there!</strong> It's a pleasure for me you
-                  visited here, I have learned a lot in the past year and gained
-                  knowledge with front end as well as backend technologies in
-                  Javascript and now my focus is to crack a job as a
-                  <strong>Web Developer</strong>. Feel free to drop me a message
-                  if you have any opportunity for me.
-                </p>
-                <p class="lead">Open for opportunities: Yes!</p>
-              </div>
-            </div>
             <div class="socialIcons">
               <div class="github">
                 <a target="_blank" href="https://github.com/ashishsharma-dev">
@@ -904,30 +104,615 @@
                 </a>
               </div>
               <div target="_blank" class="facebook">
-                <a
-                  href="https://www.facebook.com/profile.php?id=100002441707505"
-                >
+                <a href="https://www.facebook.com/profile.php?id=100002441707505">
                   <i class="fa-brands fa-facebook"></i>
                 </a>
+              </div>
+            </div>
+            <div class="ctaBtns">
+              <a href="tel:+918439762192">Contact Me</a>
+              <a target="_blank"
+                href="https://drive.google.com/file/d/1p_Ga9eaT8P5Oq2Xcon_8kpq_7rUqOpvT/view?usp=share_link">See
+                Resume</a>
+            </div>
+          </div>
+        </div>
+        <div class="col colRight animate__animated animate__fadeIn">
+          <img src="imgs/hello.svg" alt="helloimg" />
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="aboutSection" class="aboutSection mb60px">
+    <div class="container aboutContainer">
+      <div class="row aboutRow">
+        <div class="col colLeft">
+          <img src="imgs/techstack.svg" alt="techstackimg" />
+        </div>
+        <div class="col">
+          <h1 class="skills-heading slimFont">What I do</h1>
+          <p class="aboutSummary">
+            A Computer Geek with a hunger to learn every tech stack and
+            implement them in real world to solve problems
+          </p>
+          <div class="aboutContent">
+            <ul class="dev-icons">
+              <li class="software-skill-inline" name="html-5">
+                <i class="fab fa-html5"></i>
+                <p>html-5</p>
+              </li>
+              <li class="software-skill-inline" name="css3">
+                <i class="fab fa-css3-alt"></i>
+                <p>css3</p>
+              </li>
+              <li class="software-skill-inline" name="sass">
+                <i class="fab fa-sass"></i>
+                <p>sass</p>
+              </li>
+              <li class="software-skill-inline" name="JavaScript">
+                <i class="fab fa-js"></i>
+                <p>JavaScript</p>
+              </li>
+              <li class="software-skill-inline" name="reactjs">
+                <i class="fab fa-react"></i>
+                <p>reactjs</p>
+              </li>
+              <li class="software-skill-inline" name="nodejs">
+                <i class="fab fa-node"></i>
+                <p>nodejs</p>
+              </li>
+              <li class="software-skill-inline" name="swift">
+                <i class="fab fa-bootstrap"></i>
+                <p>bootstrap</p>
+              </li>
+              <li class="software-skill-inline" name="npm">
+                <i class="fab fa-npm"></i>
+                <p>npm</p>
+              </li>
+              <li class="software-skill-inline" name="mongodb">
+                <i class="fas fa-database"></i>
+                <p>mongodb</p>
+              </li>
+              <!-- <li class="software-skill-inline" name="aws">
+                  <i class="fab fa-aws"></i>
+                  <p>aws</p>
+                </li> -->
+              <li class="software-skill-inline" name="firebase">
+                <i class="fas fa-fire"></i>
+                <p>firebase</p>
+              </li>
+              <li class="software-skill-inline" name="python">
+                <i class="fab fa-java"></i>
+                <p>java</p>
+              </li>
+              <!-- <li class="software-skill-inline" name="docker">
+                  <i class="fab fa-docker"></i>
+                  <p>docker</p>
+                </li> -->
+            </ul>
+            <p class="aboutHeadings">
+              ⚡ Develop highly interactive Front end / User Interfaces for
+              your websites and web applications
+            </p>
+
+            <p class="aboutSummary aboutHeadings">
+              ⚡ Progressive Web Applications ( PWA ) in normal and SPA Stacks
+            </p>
+
+            <p class="aboutSummary aboutHeadings">
+              ⚡ Integration of third party services such as Firebase
+            </p>
+
+            <a href="#" class="knowMore"> </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="proficiencySection" class="proficiencySection mb60px">
+    <div class="container proficiencyContainer">
+      <div class="row">
+        <div class="col">
+          <h1 class="skills-heading slimFont">Proficiency</h1>
+          <p class="skillsPara">Front End/Design</p>
+          <div class="progress mb-5">
+            <div class="progress-bar" role="progressbar" style="width: 85%" aria-valuenow="0" aria-valuemin="0"
+              aria-valuemax="100"></div>
+          </div>
+          <p class="skillsPara">Backend</p>
+          <div class="progress mb-5">
+            <div class="progress-bar" role="progressbar" style="width: 70%" aria-valuenow="25" aria-valuemin="0"
+              aria-valuemax="100"></div>
+          </div>
+          <p class="skillsPara">Database</p>
+          <div class="progress mb-5">
+            <div class="progress-bar" role="progressbar" style="width: 60%" aria-valuenow="50" aria-valuemin="0"
+              aria-valuemax="100"></div>
+          </div>
+          <p class="skillsPara">Programming</p>
+          <div class="progress mb-5">
+            <div class="progress-bar" role="progressbar" style="width: 60%" aria-valuenow="75" aria-valuemin="0"
+              aria-valuemax="100"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="educationSection" class="educationSection mb60px">
+    <div class="container educationContainer">
+      <div class="row">
+        <div class="col">
+          <h1 class="skills-heading slimFont">Education</h1>
+          <div class="educationCard">
+            <div class="schoolLogo">
+              <img src="imgs/dbrau.png" alt="schoolLogo" />
+            </div>
+            <h3>DBRA University</h3>
+            <h5>Bachelor of Science (B.Sc)</h5>
+            <span class="schoolDuration">2013 - 2016</span>
+            <p>Main Subjects are: Physics, Chemistry, Maths</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="certificatesSection" class="certificatesSection mb60px">
+    <div class="container certificateContainer">
+      <h1 class="skills-heading slimFont">Certificates</h1>
+      <div class="row certRow">
+        <div class="col-lg-6 col-md-6 col-sm-12 mb-4" data-aos="fade-up">
+          <div class="certificateCard">
+            <div class="freeCode">
+              <i class="fa-solid fa-code"></i>
+            </div>
+            <div class="certificateContent">
+              <h2 class="certName">Back End Web Development</h2>
+              <p class="insName bold">Coding Ninjas</p>
+              <a target="_blank"
+                href="https://drive.google.com/file/d/1Y0k9K__fE0X-DAvtKpuMHhKAw-SsHDaO/view?usp=sharing"
+                class="showCert">Show Credintials
+                <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6 col-md-6 col-sm-12 mb-4" data-aos="fade-up">
+          <div class="certificateCard">
+            <div class="freeCode">
+              <i class="fa-solid fa-code"></i>
+            </div>
+            <div class="certificateContent">
+              <h2 class="certName">Front End Web Development</h2>
+              <p class="insName bold">Coding Ninjas</p>
+
+              <a target="_blank"
+                href="https://drive.google.com/file/d/1uqpehqda-DucDGHXVmy-zB3o6bMWblXU/view?usp=sharing"
+                class="showCert">Show Credintials
+                <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6 col-md-6 col-sm-12 mb-4" data-aos="fade-up">
+          <div class="certificateCard">
+            <div class="freeCode">
+              <i class="fa-solid fa-code"></i>
+            </div>
+
+            <div class="certificateContent">
+              <h2 class="certName">Data Structure in Java</h2>
+              <p class="insName bold">Coding Ninjas</p>
+
+              <a target="_blank"
+                href="https://drive.google.com/file/d/1O5tKnWTqZ9JI7ezuqO6V3lHHN_L1ddUG/view?usp=sharing"
+                class="showCert">Show Credintials
+                <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6 col-md-6 col-sm-12 mb-4" data-aos="fade-up">
+          <div class="certificateCard">
+            <div class="freeCode">
+              <i class="fa-solid fa-code"></i>
+            </div>
+
+            <div class="certificateContent">
+              <h2 class="certName">Introduction to Java</h2>
+              <p class="insName bold">Coding Ninjas</p>
+
+              <a target="_blank"
+                href="https://drive.google.com/file/d/18A_5Oa15_XybwI5wiaoMgN3DZGwYxc4p/view?usp=sharing"
+                class="showCert">Show Credintials
+                <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6 col-md-6 col-sm-12 mb-4" data-aos="fade-up">
+          <div class="certificateCard">
+            <div class="freeCode">
+              <i class="fa-solid fa-code"></i>
+            </div>
+            <div class="certificateContent">
+              <h2 class="certName">Responsive Web Design</h2>
+              <p class="insName bold">Free Code Camp</p>
+
+              <a target="_blank" href="https://www.freecodecamp.org/certification/ashish_dev/responsive-web-design"
+                class="showCert">Show Credintials
+                <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="projectsSection" class="projectsSection mb60px">
+    <div class="container projectsContainer">
+      <h1 class="skills-heading slimFont">Projects</h1>
+      <div class="row">
+        <div class="col-lg-6 col-md-6 col-sm-12 mb-4" data-aos="fade-up">
+          <!-- First Project -->
+
+          <div class="projectCard div" >
+            <h2 class="projectName">House Marketplace App</h2>
+            <p class="projectDetail">
+              Mobile First Layout made with Custom CSS, React JS, Firebase, I
+              have used Firebase Auth, Google Auth, Storage, and Databases in
+              this app.
+            </p>
+            <div class="projectBottom">
+              <div class="language">
+                <span class="projectDetail html">HTML <i class="html fa-brands fa-html5"></i></span>
+                <span class="projectDetail css">CSS <i class="css fa-brands fa-css3"></i></span>
+                <span class="projectDetail js">JS <i class="js fa-brands fa-js"></i></span>
+                <span class="projectDetail js">Firebase <i class="js fa-brands fa-gripfire"></i></span>
+              </div>
+              <div class="projectBtns">
+                <span><a target="_blank" href="https://house-marketplace-ashishsharma-dev.vercel.app/"
+                    class="projectLiveLink">Live</a></span>
+                <span><a target="_blank" href="https://github.com/ashishsharma-dev/HouseMarketplace"
+                    class="projectSourceCode">Code</a></span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-6 col-md-6 col-sm-12 mb-4" data-aos="fade-up">
+          <!-- First Project -->
+
+          <div class="projectCard div">
+            <h2 class="projectName">Tindog Responsive Website</h2>
+            <p class="projectDetail">
+              Mobile Responsive Website Made using HTML5, CSS3, and Bootstrap
+            </p>
+            <div class="projectBottom">
+              <div class="language">
+                <span class="projectDetail html">HTML <i class="html fa-brands fa-html5"></i></span>
+                <span class="projectDetail css">CSS <i class="css fa-brands fa-css3"></i></span>
+              </div>
+              <div class="projectBtns">
+                <span><a target="_blank" href="https://tindogbyashish.netlify.app/"
+                    class="projectLiveLink">Live</a></span>
+                <span><a target="_blank" href="https://github.com/ashishsharma-dev/tindog"
+                    class="projectSourceCode">Code</a></span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6 col-md-6 col-sm-12 mb-4" data-aos="fade-up">
+          <!-- Second Project -->
+
+          <div class="projectCard div">
+            <h2 class="projectName">Express Weather App</h2>
+            <p class="projectDetail">
+              Realtime Weather Application Made with HTML5, CSS3, Javascript,
+              NodeJS, and ExpressJS
+            </p>
+            <div class="projectBottom">
+              <div class="language">
+                <span class="projectDetail html">HTML <i class="fa-brands fa-html5"></i></span>
+                <span class="projectDetail css">CSS <i class="fa-brands fa-css3"></i></span>
+                <span class="projectDetail js">JS <i class="fa-brands fa-js"></i></span>
+              </div>
+              <div class="projectBtns">
+                <span><a target="_blank" href="https://expressweatherapp-ashish.herokuapp.com/"
+                    class="projectLiveLink">Live</a></span>
+                <span><a target="_blank" href="https://github.com/ashishsharma-dev/NodeJsWeatherApp"
+                    class="projectSourceCode">Code</a></span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-6 col-md-6 col-sm-12 mb-4" data-aos="fade-up">
+          <!-- Third Project -->
+
+          <div class="projectCard div">
+            <h2 class="projectName">Personal Portfolio Website</h2>
+            <p class="projectDetail">
+              Personal Portfolio Webpage Made with HTML5, CSS3, Bootstrap, and
+              Javascript
+            </p>
+            <div class="projectBottom">
+              <div class="language">
+                <span class="projectDetail html">HTML <i class="fa-brands fa-html5"></i></span>
+                <span class="projectDetail css">CSS <i class="fa-brands fa-css3"></i></span>
+                <span class="projectDetail js">JS <i class="fa-brands fa-js"></i></span>
+              </div>
+              <div class="projectBtns">
+                <span><a href="#" class="projectLiveLink">Live</a></span>
+                <span><a target="_blank" href="https://github.com/ashishsharma-dev/PersonalPortfolioTheme"
+                    class="projectSourceCode">Code</a></span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-6 col-md-6 col-sm-12 mb-4" data-aos="fade-up">
+          <div class="projectCard div">
+            <h2 class="projectName">Ninja Music Player UI</h2>
+            <p class="projectDetail">
+              Mobile Responsive Music Player User Interface Made with pure
+              HTML, and CSS.
+            </p>
+            <div class="projectBottom">
+              <div class="language">
+                <span class="projectDetail html">HTML <i class="fa-brands fa-html5"></i></span>
+                <span class="projectDetail css">CSS <i class="fa-brands fa-css3"></i></span>
+              </div>
+              <div class="projectBtns">
+                <span><a target="_blank" href="https://ninjaplayerui.netlify.app/"
+                    class="projectLiveLink">Live</a></span>
+                <span><a target="_blank" href="https://github.com/ashishsharma-dev/MusicPlayerUI"
+                    class="projectSourceCode">Code</a></span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-6 col-md-6 col-sm-12 mb-4" data-aos="fade-up">
+          <div class="projectCard div">
+            <h2 class="projectName">Worktodo V2</h2>
+            <p class="projectDetail">
+              Mobile Responsive Todo Application with localStorage to save
+              data in the local storage of device. Made with HTML, CSS, &
+              Javascript.
+            </p>
+            <div class="projectBottom">
+              <div class="language">
+                <span class="projectDetail html">HTML <i class="fa-brands fa-html5"></i></span>
+                <span class="projectDetail css">CSS <i class="fa-brands fa-css3"></i></span>
+                <span class="projectDetail js">JS <i class="fa-brands fa-js"></i></span>
+              </div>
+              <div class="projectBtns">
+                <span><a target="_blank" href="https://worktodov2.netlify.app/" class="projectLiveLink">Live</a></span>
+                <span><a target="_blank" href="https://github.com/ashishsharma-dev/Worktodo-v2"
+                    class="projectSourceCode">Code</a></span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-6 col-md-6 col-sm-12 mb-4" data-aos="fade-up">
+          <div class="projectCard div">
+            <h2 class="projectName">Github Finder App</h2>
+            <p class="projectDetail">
+              Mobile Responsive Github Finder Application made with React JS,
+              and Tailwind CSS.
+            </p>
+            <div class="projectBottom">
+              <div class="language">
+                <span class="projectDetail html">JS <i class="fa-brands fa-js"></i></span>
+                <span class="projectDetail css">React <i class="fa-brands fa-react"></i></span>
+                <span class="projectDetail js">Tailwind CSS <i class="fa-solid fa-spray-can"></i></span>
+              </div>
+              <div class="projectBtns">
+                <span><a target="_blank" href="https://github-finder-ashishsharma-dev.vercel.app/"
+                    class="projectLiveLink">Live</a></span>
+                <span><a target="_blank" href="https://github.com/ashishsharma-dev/GitHub-Finder"
+                    class="projectSourceCode">Code</a></span>
               </div>
             </div>
           </div>
         </div>
       </div>
-      <div class="footerCredits">
-        <p class="credit">
-          Created by <span class="myName">Ashish Sharma</span>
-        </p>
+    </div>
+  </section>
+
+  <section id="experiencesSection" class="experiencesSection mb60px">
+    <div class="container experiencesContainer">
+      <h1 class="skills-heading slimFont">Experiences</h1>
+      <div class="row">
+        <div class="col-sm-12 col-md-6 col-lg-4 mb-3" data-aos="fade-up">
+          <div class="expCol">
+            <div class="blurredDiv1">
+              <p class="comName">Teleperformance India</p>
+            </div>
+
+            <div class="comImg">
+              <img src="imgs/tp.png" alt="" />
+            </div>
+
+            <div class="roleName">
+              <h2>Customer Service Associate</h2>
+              <p>Nov 2016 - Jan 2019 · 2 yrs 3 mos</p>
+              <p class="comDesc">
+                I worked in Teleperformance as a Customer Service Associate.
+                This was my first job and taught me a lot.
+              </p>
+            </div>
+
+            <div class="expList">
+              <ul>
+                <li>Customer Service, Handling Calls</li>
+                <li>On Call Resolution, Customer Query Solving</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-12 col-md-6 col-lg-4 mb-3" data-aos="fade-up">
+          <div class="expCol">
+            <div class="blurredDiv2">
+              <p class="comName">Rife Infotech</p>
+            </div>
+
+            <div class="comImg">
+              <img src="imgs/rife.png" alt="" />
+            </div>
+
+            <div class="roleName">
+              <h2>Content Writer</h2>
+              <p>Jun 2020 - Dec 2021 · 1 yr 7 mos</p>
+              <p class="comDesc">
+                I worked in Rife Infotech as a Content Writer where I used to
+                write content about the latest job openings in Government, and
+                Private Sectors. Also, this job is responsible for increasing
+                my interest in Web Technologies and the possibilities we can
+                achieve with code.
+              </p>
+            </div>
+
+            <div class="expList">
+              <ul>
+                <li>Content Writing, WordPress, CMS</li>
+                <li>Data Handling, Updating Articles Hourly Basis</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-12 col-md-6 col-lg-4 mb-3" data-aos="fade-up">
+          <div class="expCol">
+            <div class="blurredDiv3">
+              <p class="comName">Cybermount Solutions</p>
+            </div>
+
+            <div class="comImg">
+              <img src="imgs/cybermount.webp" alt="" />
+            </div>
+
+            <div class="roleName">
+              <h2>Web Content Writer</h2>
+              <p>Dec 2021 - Present · 8 mos</p>
+              <p class="comDesc">
+                This is my current job as a Web Content Writer where I write
+                technical and non technical content related to Web, SEO,
+                Fashion and Entertainment.
+              </p>
+            </div>
+
+            <div class="expList">
+              <ul>
+                <li>WordPress, CMS, Web Content Writing</li>
+                <li>SEO, eCommerce, etc.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-12 col-md-6 col-lg-4 mb-3" data-aos="fade-up">
+          <div class="expCol">
+            <div class="blurredDiv4">
+              <p class="comName">OMK Solutions</p>
+            </div>
+
+            <div class="comImg">
+              <img src="imgs/omk-logo.jpg" alt="omk-logo" />
+            </div>
+
+            <div class="roleName">
+              <h2>Website Developer</h2>
+              <p>Dec 2022 - Present · 3 mos</p>
+              <p class="comDesc">
+                I am currently working here in OMK Solutions as a Website Developer. My main tasks here to do custom
+                tweeks in Shopify Designs, Wordpress Designs and Static Websites.
+              </p>
+            </div>
+
+            <div class="expList">
+              <ul>
+                <li>Currently working on HTML, CSS, JS, Wordpress, and Shopify</li>
+              </ul>
+            </div>
+          </div>
+        </div>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <!-- Bootsrap JS CDN -->
-    <!-- JavaScript Bundle with Popper -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"></script>
+  <section id="footerSection" class="footerSection">
+    <div class="container footerContainer">
+      <h1 class="skills-heading slimFont">Reach Out to me!</h1>
+      <div class="row">
+        <div class="col">
+          <form action="https://formspree.io/f/mrgdpqpl" method="POST">
+            <input required placeholder="Enter Name" type="text" name="name" id="name" />
+            <input required placeholder="Email ID" type="email" name="email" id="email" />
+            <input required placeholder="Mobile No." type="number" name="number" id="number" />
+            <textarea required placeholder="Write Here" name="query" id="query">
+              </textarea>
+            <input class="formSubmitBtn" value="Send Message" type="submit" />
+          </form>
+        </div>
+        <div class="col footerCol">
+          <div class="myPic">
+            <div class="picture">
+              <img src="imgs/myPic.jpg" alt="authorPic" />
+              <p style="color: #868e96; font-size: 1rem" class="lead">
+                <strong>Hello there!</strong> It's a pleasure for me you
+                visited here, I have learned a lot in the past year and gained
+                knowledge with front end as well as backend technologies in
+                Javascript and now my focus is to crack a job as a
+                <strong>Web Developer</strong>. Feel free to drop me a message
+                if you have any opportunity for me.
+              </p>
+              <p class="lead">Open for opportunities: Yes!</p>
+            </div>
+          </div>
+          <div class="socialIcons">
+            <div class="github">
+              <a target="_blank" href="https://github.com/ashishsharma-dev">
+                <i class="fa-brands fa-github"></i>
+              </a>
+            </div>
+            <div target="_blank" class="linkedin">
+              <a href="https://www.linkedin.com/in/ashishsharma-dev">
+                <i class="fa-brands fa-linkedin-in"></i>
+              </a>
+            </div>
+            <div class="gmail">
+              <a href="mailto:sharmaashish049@gmail.com">
+                <i class="fa-solid fa-envelope"></i>
+              </a>
+            </div>
+            <div target="_blank" class="facebook">
+              <a href="https://www.facebook.com/profile.php?id=100002441707505">
+                <i class="fa-brands fa-facebook"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footerCredits">
+      <p class="credit">
+        Created by <span class="myName">Ashish Sharma</span>
+      </p>
+    </div>
+  </section>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <!-- Bootsrap JS CDN -->
+  <!-- JavaScript Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"></script>
 
-    <script src="script.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 
-  </body>
+
+  <!-- Initializing AOS -->
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+
+  <script src="script.js"></script>
+
+</body>
+
 </html>
